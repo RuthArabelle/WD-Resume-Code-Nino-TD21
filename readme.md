@@ -60,12 +60,12 @@ Creative mini Portfolio/Resume
 Description of the project in details.
 
 Guiding Question:
-- This website serves as a creative portfolio, showcasing my educational background, skills, software expertise, and a selection of recent work. Built using HTML and external CSS.
+- This website serves as a creative portfolio, showcasing my educational background, skills, software expertise, and a selection of recent work. Using HTML and external CSS.
 
 ### Key Components
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
--Single page resume/creative porfolio
+-Single page mini creative porfolio/resume
 
 ### Technology
 <!-- TODO: List of Technology Used -->
