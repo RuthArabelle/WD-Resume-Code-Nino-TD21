@@ -35,20 +35,22 @@ body{
     min-height: 400px;
     margin: 5px;
 }
-.profile-card .profile-pic{
-    margin-top: 0.5px;
+.profile-card .profile-pic {
+    width: 100px;
+    height: 100px;
     overflow: hidden;
-}
-.profile-card .profile-pic img{
-    border-radius: 5px;
-}
-.profile-card .profile-details{
+    border-radius: 50%;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    width:95%;
 }
+
+.profile-card .profile-pic img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
 .profile-details .intro{
     display: flex;
     justify-content: center;
@@ -65,26 +67,7 @@ body{
     padding: 5px 10px;
     margin: 0%;
 }
-.profile-details .intro .social{
-    margin-top: 10px;
-    margin-bottom: 25px;
-}
-.profile-details .intro .social i{
-    color:#ddd;
-    font-size: 16px;
-    background-color:#222;
-    margin: 5px;
-    height: 35px;
-    width:35px;
-    line-height: 35px;
-    text-align: center;
-    border-radius: 5px;
-    transition: 0.5s;
-}
-.profile-details .intro .social i:hover{
-    transform: scale(1.2);
-    border:1px solid rgba(255,255,255,0.3);
-}
+
 .profile-details .contact-info{
     background-color: #1d1d1d;
     padding: 15px;
