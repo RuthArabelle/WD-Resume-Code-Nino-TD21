@@ -1,6 +1,9 @@
 :root {
     --red: #E23C47;
     --dark-red: #590D12;
+    --dark-magenta: #D7006B; /* Add these color variables */
+    --light-green: #4CAF50;
+    --light-purple: #9C27B0;
 }
 
 * {
@@ -19,7 +22,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-right: 520px;
+    margin-right: 520px; /* Adjust as necessary */
 }
 
 .about {
@@ -185,14 +188,11 @@ body {
     margin: 0;
 }
 
-.my-works,
-.artworks,
-.portrait-art {
+.my-works {
     position: relative;
     width: 100%;
     max-width: 800px;
     overflow: hidden;
-    margin: 2rem auto;
 }
 
 .slider {
@@ -256,28 +256,215 @@ input[type="radio"]:checked + .slides {
 input[type="radio"]:checked ~ .nav-buttons .nav-dot {
     background-color: #717171;
 }
+.my-works {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+}
 
-@media (max-width: 768px) {
-    .profile-card {
-        width: 90%;
-        margin: 1rem auto;
+.slider {
+    display: flex;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slides label {
+    min-width: 100%;
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.nav-buttons {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.nav-dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+#photo-slide-1:checked ~ .slides {
+    transform: translateX(0);
+}
+
+#photo-slide-2:checked ~ .slides {
+    transform: translateX(-100%);
+}
+
+#photo-slide-3:checked ~ .slides {
+    transform: translateX(-200%);
+}
+
+.nav-buttons label {
+    cursor: pointer;
+}
+input[type="radio"]:checked ~ .nav-buttons .nav-dot {
+    background-color: #717171;
+}
+.artworks {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    margin: 2rem auto;
+}
+
+.artworks .slider {
+    display: flex;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.artworks .slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.artworks .slides label {
+    min-width: 100%;
+}
+
+.artworks .slides img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.artworks .nav-buttons {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.artworks .nav-dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+#art-slide-1:checked ~ .slides {
+    transform: translateX(0);
+}
+
+#art-slide-2:checked ~ .slides {
+    transform: translateX(-100%);
+}
+
+#art-slide-3:checked ~ .slides {
+    transform: translateX(-200%);
+}
+
+.artworks .nav-buttons label {
+    cursor: pointer;
+}
+input[type="radio"]:checked ~ .nav-buttons .nav-dot {
+    background-color: #717171;
+}
+
+.portrait-art {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    margin: 20px auto;
+}
+.portrait-art .slider {
+    display: flex;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.portrait-art .slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.portrait-art .slides label {
+    min-width: 100%;
+}
+
+.portrait-art .slides img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.portrait-art .nav-buttons {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.portrait-art .nav-dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked + .slides {
+    transform: translateX(calc(-100% * var(--current-slide)));
+}
+
+#portrait-slide-1:checked ~ .slides {
+    transform: translateX(0);
+}
+
+#portrait-slide-2:checked ~ .slides {
+    transform: translateX(-100%);
+}
+
+#portrait-slide-3:checked ~ .slides {
+    transform: translateX(-200%);
+}
+
+.portrait-art .nav-buttons label {
+    cursor: pointer;
+}
+
+input[type="radio"]:checked ~ .nav-buttons .nav-dot {
+    background-color: #717171;
+}
+
+@media(max-width:768px)
+{
+    .about{
+        width: 1005;
+        max-width: 400px;
+        padding:1rem;
+        margin:1rem;
+
     }
-
-    .container {
-        margin-left: 0;
-    }
-
-    .about {
-        width: 90%;
-        padding: 1rem;
-        margin: 1rem auto;
-    }
-
-    .about h1 {
+    .about h1{
         font-size: 2.2rem;
     }
-
-    .about .work {
-        grid-template-columns: 1fr;
+    .about .work{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(4,auto);
     }
 }
