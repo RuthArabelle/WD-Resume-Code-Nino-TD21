@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="profile-card">
+                <div class="profile-pic">
+                    <img src="images/ruth.webp" alt="user avatar">
+                </div>
+
+                <div class="profile-details">
+                    <div class="intro">
+                        <h2>RUTH ARABELLE G. NIÑO</h2>
+                        <h4>Photographer & Content Creator</h4>
+                        <div class="social">
+                            <a href="#"><i class="fab fa-facebook" style="color:var(--blue) ;"></i></a>
+                            <a href="#"><i class="fab fa-twitter"  style="color:var(--skyblue) ;"></i></a>
+                            <a href="#"><i class="fab fa-twitch"   style="color:var(--dark-pink) ;"></i></a>
+                            <a href="#"><i class="fab fa-youtube"  style="color:var(--light-blue) ;"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="row">
+                            <div class="icon">
+                                <i class="fa fa-phone" style="color:var(--dark-magenta);"></i>
+                            </div>
+                            <div class="content">
+                                <span>Phone</span>
+                                <h5>09485378882</h5>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="icon">
+                                <i class="fa fa-envelope-open" style="color:var(--light-green) ;"></i>
+                        </div>
+                            <div class="content">
+                                <span>Email</span>
+                                <h5>rutharabelle22@gmail.com</h5>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="icon">
+                                    <i class="fa fa-map-marker" style="color:var(--light-purple);"></i>
+                            </div>
+                            <div class="content">
+                                <span>Address</span>
+                                <h5>Blk 17 Lot 5 Las Palmas Subdivision, Cay Pombo, Santa Maria, Bulacan</h5>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!--about section-->
+                    <div class="about">
+                        <h1>About Me</h1>
+                        <p>Ready to utilize my skill and passion. As a Multimedia Artist is responsible for Creating graphics and Illustrations using Computer programs.
+                            Creating innovative multimedia animations, crafting compelling logos and banners, editing content creation videos, and producing digital elements 
+                            for various media projects.
+                        </p>
+                        <h2>What I Do !!!</h2>
+                        <div class="work">
+                            <div class="workbox">
+                                <div class="icon">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="desc">
+                                    <h3>Photographer</h3>
+                                    <p>Captured, edited, and shared high-quality photos for personal projects and clients</p>
+                                </div>
+                            </div>
+
+                            <div class="workbox">
+                                <div class="icon">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="desc">
+                                    <h3>Content Creator</h3>
+                                    <p>Created engaging content for social media platforms using a combination of photography and video skills</p>
+                                </div>
+                            </div>
+                    </div>
+            </div>
+        </div>
+    </body>

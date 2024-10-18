@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website designing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="profile-card">
+        <div class="profile-pic">
+            <img src="images/ruth.webp" alt="user avatar">
+        </div>
+        <div class="profile-details">
+            <div class="intro">
+                <h2>RUTH ARABELLE G. NIÑO</h2>
+                <h4>Photographer & Content Creator</h4>
+                <div class="social">
+                    <a href="https://www.facebook.com/belle0122/" target="_blank">
+                        <i class="fab fa-facebook" style="color: var(--blue);"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="contact-info">
+                <div class="row">
+                    <div class="icon">
+                        <i class="fa fa-phone" style="color:var(--dark-magenta)"></i>
+                    </div>
+                    <div class="content">
+                        <span>Phone</span>
+                        <h5>+63485378882</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="icon">
+                        <i class="fa fa-envelope-open" style="color:var(--light-green)"></i>
+                    </div>
+                    <div class="content">
+                        <span>Email</span>
+                        <h5>rutharabelle22@gmail.com</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="icon">
+                        <i class="fa fa-map-marker" style="color:var(--light-purple)"></i>
+                    </div>
+                    <div class="content">
+                        <span>Location</span>
+                        <h5>Blk17 Lot5, Las Palmas Subd.</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="about">
+            <h1>About Me</h1>
+            <p>Ready to utilize my skill and passion. As a Multimedia Artist is responsible for Creating graphics and Illustrations using Computer programs.
+            Creating innovative multimedia animations, crafting compelling logos and banners, editing content creation videos, and producing digital elements 
+            for various media projects.</p>
+            <h2>SKILLS</h2>
+            <p>
+                <li>Video Editing: Proficient in Adobe Premiere Pro, Final Cut Pro, DaVinci Resolve</li>
+                <li>Photography: Skilled in DSLR photography, photo editing (Adobe Photoshop, Lightroom)</li>
+                <li>Graphic Design: Experienced with Adobe Illustrator, After Effects, and Photoshop</li>
+                <li>Streaming: Knowledgeable in live streaming platforms (Twitch, YouTube), OBS Studio setup</li>
+            </p>
+            <h2>What I Do?</h2>
+            <div class="work">
+                <div class="workbox">
+                    <div class="icon">
+                        <img src="images/camera.png" alt="">
+                    </div>
+                    <div class="desc">
+                        <h3>Photographer</h3>
+                        <p>Captured, edited, and shared high-quality photos for personal projects and clients.</p>
+                    </div>
+                </div>
+                <div class="workbox">
+                    <div class="icon">
+                        <img src="images/youtube.png" alt="">
+                    </div>
+                    <div class="desc">
+                        <h3>Content Creator</h3>
+                        <p>Created engaging content for social media platforms using a combination of photography and video skills.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2>Education</h2>
+                <ul>
+                    <li>Fortunato F. Halili National Agricultural School: Junior Highschool 2017-2020</li>
+                    <li>STI Santa Maria: Senior Highschool 2021-2022</li>
+                    <li>Far Eastern University Institute of Technology: College 2023-Present</li>
+                </ul>
+            </div>
+            <h2>My Works</h2>
+            <section class="my-works">
+                <h4>Photography</h4>
+                <div class="slider">
+                    <input type="radio" name="photo-slider" id="photo-slide-1" checked>
+                    <input type="radio" name="photo-slider" id="photo-slide-2">
+                    <input type="radio" name="photo-slider" id="photo-slide-3">
+                    <div class="slides">
+                        <label for="photo-slide-1"><img src="images/1.jpg" alt=""></label>
+                        <label for="photo-slide-2"><img src="images/2.JPG" alt=""></label>
+                        <label for="photo-slide-3"><img src="images/3.jpg" alt=""></label>
+                    </div>
+                </div>
+                <div class="nav-buttons">
+                    <label for="photo-slide-1" class="nav-dot"></label>
+                    <label for="photo-slide-2" class="nav-dot"></label>
+                    <label for="photo-slide-3" class="nav-dot"></label>
+                </div>
+            </section>
+            <section class="artworks">
+                <h4>Digital Art</h4>
+                <div class="slider">
+                    <input type="radio" name="art-slider" id="art-slide-1" checked>
+                    <input type="radio" name="art-slider" id="art-slide-2">
+                    <div class="slides">
+                        <label for="art-slide-1"><img src="images/art1.jpg" alt=""></label>
+                        <label for="art-slide-2"><img src="images/art2.jpg" alt=""></label>
+                    </div>
+                </div>
+                <div class="nav-buttons">
+                    <label for="art-slide-1" class="nav-dot"></label>
+                    <label for="art-slide-2" class="nav-dot"></label>
+                </div>
+            </section>
+            <section class="portrait-art">
+                <div class="slider">
+                    <input type="radio" name="portrait-slider" id="portrait-slide-1" checked>
+                    <input type="radio" name="portrait-slider" id="portrait-slide-2">
+                    <input type="radio" name="portrait-slider" id="portrait-slide-3">
+                    <div class="slides">
+                        <label for="portrait-slide-1"><img src="images/portrait1.jpg" alt=""></label>
+                        <label for="portrait-slide-2"><img src="images/portrait2.jpg" alt=""></label>
+                        <label for="portrait-slide-3"><img src="images/portrait3.jpg" alt=""></label>
+                    </div>
+                </div>
+                <div class="nav-buttons">
+                    <label for="portrait-slide-1" class="nav-dot"></label>
+                    <label for="portrait-slide-2" class="nav-dot"></label>
+                    <label for="portrait-slide-3" class="nav-dot"></label>
+                </div>
+            </section>
+            <div>
+                <h2>Achievement</h2>
+                <ul>
+                    <li>Junior Highschool Photo Journalism 3rd place (2017)</li>
+                    <li>Senior Highschool Digital Photograph 1st place (2022)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
